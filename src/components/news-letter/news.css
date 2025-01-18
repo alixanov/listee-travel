@@ -1,0 +1,95 @@
+.news__container {
+     width: 100%;
+     height: 400px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(#ee1c45, #ff803c);
+     position: relative;
+     margin-top: 70px;
+}
+
+.news__build__img img {
+     position: absolute;
+     top: -292px;
+     left: 0;
+}
+
+.news__card {
+     padding: 40px;
+     border-radius: 10px;
+    display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+
+.news__card>p {
+     width: 500px;
+     font-family: 'WorkSans-Bold', sans-serif;
+     font-size: 45px;
+     color: white;
+     margin-bottom: 15px;
+     font-weight: bold;
+}
+
+.news__card>span {
+     width: 600px;
+     font-family: 'WorkSans-Light', sans-serif;
+     font-size: 16px;
+     color: white;
+     line-height: 1.5;
+     margin-bottom: 30px;
+}
+
+.news__input {
+     width: 580px;
+     height: 74px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 20px;
+     background-color: rgba(255, 255, 255, 0.365);
+}
+
+.news__input input {
+     width: 70%;
+     font-size: 22px;
+     border: 1px solid #cccccc;
+     border-radius: 5px 0 0 5px;
+     outline: none;
+     background: none;
+     border: none;
+     text-indent: 10px;
+     font-size: 19px;
+     color: white;
+     
+}
+
+.news__input input::placeholder {
+     color: white;
+     font-size: 22px;}
+
+.news__input button {
+     width: 80px;
+     height: 74px;
+     background: white;
+     border: none;
+     color: white;
+     font-size: 16px;
+     font-weight: bold;
+     border-radius: 0 5px 5px 0;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.3s;
+}
+
+.news__input button:hover {
+     background:rgba(255, 255, 255, 0.788);
+}
+
+.news__input button img {
+     width: 20px;
+     margin-left: 5px;
+}

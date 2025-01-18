@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Water Brush';
+  src: url('../src/fonts/WaterBrush-Regular.ttf');
+}
+
+
+@font-face {
+  font-family: 'ClickerScript';
+  src: url('../src/fonts/ClickerScript-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'WorkSans-Light';
+  src: url('../src/fonts/WorkSans-Light.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  max-width: 1920px;
+  width: 100%;
+}
+
+.app__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    padding-inline: 170px;  }

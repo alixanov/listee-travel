@@ -1,0 +1,124 @@
+.location__container {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 70px;
+     text-align: center;
+}
+
+.location__container>span {
+     font-family: 'Water Brush', cursive;
+     color: #cd1a40;
+     font-size: 60px;
+     font-weight: 500;
+}
+
+.location__container>p {
+     font-family: 'WorkSans-Light', sans-serif;
+     color: #222222;
+     font-size: 70px;
+     font-weight: 300;
+     margin: -15px 0 50px;
+     text-transform: uppercase;
+}
+
+.location__cards {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+gap: 60px;     width: 80%;
+}
+
+.location__card {
+     position: relative;
+     border-radius: 10px;
+     overflow: hidden;
+     cursor: pointer;
+     transition: transform 0.3s ease;
+}
+
+.location__card.large {
+     grid-column: span 1;
+}
+
+.location__card img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.location__card:hover {
+     transform: scale(1.02);
+}
+
+.location__overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     opacity: 0;
+     transition: opacity 0.3s ease;
+}
+
+.location__card:hover .location__overlay {
+     opacity: 1;
+}
+
+.location__overlay h3 {
+     font-size: 30px;
+     font-family: 'WorkSans-Light', sans-serif;
+     color: white;
+     margin: 10px 0;
+}
+.location__overlay>button {
+     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
+     width: 155px;
+     height: 48px;
+     background: linear-gradient(#ee1c45, #ff803c);
+     color: white;
+     font-weight: 700;
+     border-radius: 22px;
+     border: none;
+     cursor: pointer;
+     transition: background 0.3s, transform 0.2s;
+     font-size: 16px;
+}
+
+.location__overlay>button:hover {
+     background: linear-gradient(#ff803c, #ee1c45);
+}
+
+.location__overlay>button:active {
+     transform: scale(0.95);
+}
+
+
+.location__viewMore {
+     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
+          width: 144px;
+          height: 54px;
+          background: linear-gradient(#ee1c45, #ff803c);
+          color: white;
+          font-weight: 700;
+          border-radius: 22px;
+          border: none;
+          cursor: pointer;
+          transition: background 0.3s, transform 0.2s;
+          font-size: 16px;
+}
+
+
+.location__viewMore:hover {
+     background: linear-gradient(#ff803c, #ee1c45);
+}
+
+.location__viewMore:active {
+     transform: scale(0.95);
+}
+

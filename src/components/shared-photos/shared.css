@@ -1,0 +1,48 @@
+.shared__container {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 70px;
+     text-align: center;
+}
+
+.shared__container>span {
+     font-family: 'Water Brush', cursive;
+     color: #cd1a40;
+     font-size: 60px;
+     font-weight: 500;
+}
+
+.shared__container>p {
+     font-family: 'WorkSans-Light', sans-serif;
+     color: #222222;
+     font-size: 70px;
+     font-weight: 300;
+     margin: -15px 0 50px;
+     text-transform: uppercase;
+}
+
+.shared__container>h4 {
+     width: 900px;
+     font-family: 'WorkSans-Light', sans-serif;
+     color: #222222;
+     font-size: 16px;
+     font-weight: 300;
+     margin: -15px 0 50px;
+}
+.shared__card {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap:wrap;
+gap: 60px;}
+.shared__card>img {
+     width: 380px;
+     height: 486px;
+     transition: opacity 0.3s;
+}
+
+.shared__card>img:hover {
+     opacity: 0.8;
+}

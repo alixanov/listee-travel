@@ -1,0 +1,108 @@
+.footer__container {
+     width: 100%;
+     background-image: url(../../assets/footer-background.png);
+     color: #ffffff;
+     padding: 40px 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     z-index: 1;
+     padding-inline: 170px;}
+
+.footer__container::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: -1;
+}
+
+.footer__content {
+     text-align: center;
+     margin-bottom: 30px;
+}
+
+.footer__content h3 {
+     font-size: 44px;
+     margin-bottom: 15px;
+}
+
+
+.footer__links {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     margin-bottom: 30px;
+}
+
+.footer__section h3 {
+     font-family: 'ClickerScript', Arial, Helvetica, sans-serif;
+     margin-bottom: 15px;
+     color: white;
+     font-size: 63px;
+     font-weight: 400;
+}
+
+.footer__section h6 {
+     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
+     width: 600px;
+     margin-bottom: 15px;
+     color: #cccccc;               font-size: 20px;
+               font-weight: 400;
+}
+
+.footer__section h4 {
+     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
+     font-size: 27px;
+     margin-bottom: 15px;
+}
+
+.footer__section ul {
+     list-style: none;
+     padding: 0;
+}
+
+.footer__section ul li {
+     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
+     font-size: 22px;
+     line-height: 2;
+     cursor: pointer;
+          color: #cccccc;
+}
+
+.footer__section ul li:hover {
+     text-decoration: underline;
+     color: #ff6347;
+}
+
+.footer__section p {
+     width: 400px;
+     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
+     font-size: 22px;
+     line-height: 1.5;
+     color: #cccccc;
+}
+
+.footer__social {
+     display: flex;
+     gap: 15px;
+}
+
+.footer__social img {
+     width: 30px;
+     height: 30px;
+     cursor: pointer;
+     transition: transform 0.3s ease;
+}
+
+.footer__social img:hover {
+     transform: scale(1.1);
+}
+

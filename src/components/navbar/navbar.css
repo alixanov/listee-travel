@@ -1,0 +1,140 @@
+.title__container {
+     width: 100%;
+     min-height: 1000px;
+     background-image: url("../../assets/Rectangle 13.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     padding-inline: 170px;
+     position: relative;
+     z-index: 1;
+}
+
+.title__container::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: -1;
+}
+
+.navbar__container {
+     width: 100%;
+     height: 81px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.navbar__container>a {
+     font-family: 'ClickerScript', Arial, Helvetica, sans-serif;
+     font-size: 45px;
+     color: #EE1C45;
+}
+
+.navbar__a__links {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 22px;
+}
+
+.navbar__a__links>a {
+     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     color: white;
+     transition: 0.5s ease-out;
+}
+
+.navbar__a__links>a:hover {
+     color: #EE1C45;
+}
+
+.navbar__sing__in {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 22px;
+}
+
+.navbar__sing__in>a {
+     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     font-weight: 700;
+     color: white;
+     transition: 0.5s ease-out;
+}
+
+.navbar__sing__in>a:hover {
+     color: #EE1C45;
+}
+
+.navbar__sing__in>button {
+     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
+     width: 150px;
+     height: 48px;
+     background: linear-gradient(#ee1c45, #ff803c);
+     color: white;
+     font-weight: 700;
+     border-radius: 22px;
+     border: none;
+     cursor: pointer;
+     transition: background 0.3s, transform 0.2s;
+     font-size: 20px;
+}
+
+.navbar__sing__in>button:hover {
+     background: linear-gradient(#ff803c, #ee1c45);
+}
+
+.navbar__sing__in>button:active {
+     transform: scale(0.95);
+}
+
+.navbar__icon > img {
+     display: none;
+}
+
+
+
+
+@media (max-width: 576px) {
+
+     .navbar__container {
+          width: 100%;
+          height: 61px;
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+     }
+
+
+     .navbar__container>a {
+          font-size: 25px;
+     }
+
+     .navbar__sing__in>a {
+          width: 60px;
+          font-size: 16px;
+          font-weight: 400;
+
+     }
+
+     .navbar__sing__in>button {
+          width: 80px;
+          height: 40px;
+
+          font-size: 16px;
+     }
+
+     .navbar__a__links {
+          display: none;
+     }
+
+     .navbar__icon > img {
+          display:block;
+     }
+}

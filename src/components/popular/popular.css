@@ -1,0 +1,93 @@
+.popular__container {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 70px;
+     text-align: center;
+}
+
+.popular__container>span {
+     font-family: 'Water Brush', cursive;
+     color: #cd1a40;
+     font-size: 60px;
+     font-weight: 500;
+}
+
+.popular__container>p {
+     font-family: 'WorkSans-Light', sans-serif;
+     color: #222222;
+     font-size: 70px;
+     font-weight: 300;
+     margin: -15px 0 50px;
+     text-transform: uppercase;
+}
+
+.popular__container>h4 {
+     width: 900px;
+     font-family: 'WorkSans-Light', sans-serif;
+     color: #222222;
+     font-size: 16px;
+     font-weight: 300;
+     margin: -15px 0 50px;
+}
+
+.popular__cards {
+     display: flex;
+     justify-content: center;
+gap: 60px;     
+margin-top: 30px;
+}
+
+.popular__card {
+     width: 380px;
+     border-radius: 12px;
+     overflow: hidden;
+     background-color: #FFF9F0;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.popular__card img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+}
+
+.card__details {
+     padding: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.popular__card__title {
+     width: 100px;
+     display: flex;
+     align-items: start;
+     flex-direction: column;
+}
+
+.card__title {
+     font-family: 'WorkSans-Bold', sans-serif;
+     font-size: 18px;
+     color: #222222;
+     margin-bottom: 10px;
+}
+
+.card__details span {
+     font-family: 'WorkSans-Light', sans-serif;
+     font-size: 14px;
+     color: #666;
+}
+
+.card__price {
+     font-family: 'WorkSans-Bold', sans-serif;
+     font-size: 18px;
+     color: #cd1a40;
+     margin-top: 10px;
+}
+
+.popular__card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

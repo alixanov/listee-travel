@@ -1,0 +1,82 @@
+.activity__container {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 70px;
+     text-align: center;
+}
+
+.activity__container>span {
+     font-family: 'Water Brush', cursive;
+     color: #cd1a40;
+     font-size: 60px;
+     font-weight: 500;
+}
+
+.activity__container>p {
+     font-family: 'WorkSans-Light', sans-serif;
+     color: #222222;
+     font-size: 70px;
+     font-weight: 300;
+     margin: -15px 0 50px;
+     text-transform: uppercase;
+}
+
+.activity__container>h4 {
+     width: 900px;
+     font-family: 'WorkSans-Light', sans-serif;
+     color: #222222;
+     font-size: 16px;
+     font-weight: 300;
+     margin: -15px 0 50px;
+     text-transform: uppercase;
+}
+
+.activity__grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 60px;
+}
+
+.activity__card {
+     width: 378px;
+     height: 412px;
+     background: #fff9f0;
+     border-radius: 8px;
+     padding: 80px 20px;
+     text-align: center;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity__card:hover {
+     background: linear-gradient(135deg, #ee1c45, #ff803c);
+     color: white;
+}
+
+
+.activity__card img {
+     max-width: 100px;
+     margin-bottom: 15px;
+}
+
+.activity__card p {
+     font-family: 'WorkSans-Bold', sans-serif;
+     font-size: 30px;
+     margin: 10px 0;
+     color: #999999;
+     font-weight: 600;
+}
+
+.activity__card span {
+     font-family: 'WorkSans-Light', sans-serif;
+     font-size: 18px;
+     font-weight: 400;
+     color: #999999;
+}
+
+.activity__card:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
