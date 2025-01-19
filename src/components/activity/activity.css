@@ -156,7 +156,7 @@
 @media screen and (max-width: 480px) {
      .activity__container>span {
           font-size: 10px;
-          font-weight: 300;
+          font-weight: 100;
      }
 
      .activity__container>p {
