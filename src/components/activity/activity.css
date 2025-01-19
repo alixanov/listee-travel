@@ -152,7 +152,7 @@
      }
 }
 
-/* Mobile view: Single column or flex wrap layout for cards */
+
 @media screen and (max-width: 480px) {
      .activity__container>span {
           font-size: 10px;
@@ -175,11 +175,11 @@
      .activity__grid {
           display: flex;
           flex-direction: column;
-          /* Stack items vertically */
+        
           gap: 20px;
-          /* Reduce gap between items */
+     
           align-items: center;
-          /* Center content */
+       
      }
 
      .activity__card {

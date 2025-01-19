@@ -21,7 +21,6 @@
      z-index: -1;
 }
 
-/* Адаптация для планшетов (ширина до 992px) */
 @media (max-width: 992px) {
      .title__container {
           background-image: url("../../assets/planshet.avif");
@@ -30,7 +29,6 @@
      }
 }
 
-/* Адаптация для телефонов (ширина до 576px) */
 @media (max-width: 576px) {
      .title__container {
           background-image: url("../../assets/telefon.avif");
@@ -116,7 +114,7 @@
 }
 
 
-/* Адаптация для планшетов (ширина до 992px) */
+
 @media (max-width: 992px) {
      .navbar__container{
                padding: 0 0;
@@ -141,7 +139,6 @@
                     }
 }
 
-/* Адаптация для планшетов (ширина до 992px) */
 @media (max-width: 910px) {
 
 

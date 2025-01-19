@@ -92,7 +92,7 @@ width: 900px;
 }
 
 
-/* Адаптивность для планшетов */
+
 @media (max-width: 768px) {
      .shared__container>span {
                font-size: 35px;     }
@@ -112,7 +112,7 @@ width: 100%;
           height: auto;
      }
 }
-/* Адаптивность для мобильных устройств */
+
 @media (max-width: 480px) {
      .shared__container>span {
           font-size: 15px;
@@ -134,22 +134,17 @@ width: 100%;
 
      .shared__card {
           flex-direction: column;
-          /* Stack images vertically */
+
           align-items: center;
-          /* Center images */
           gap: 20px;
-          /* Smaller gap between images */
+     
      }
 
      .shared__card>img {
           width: 100%;
-          /* Allow the images to take full container width */
           max-width: 350px;
-          /* Ensure it doesn't get too large */
           height: auto;
           object-fit: contain;
-          /* Maintain aspect ratio */
           margin: 0;
-          /* Remove extra margin */
      }
 }

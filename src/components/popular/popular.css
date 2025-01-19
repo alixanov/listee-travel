@@ -109,7 +109,7 @@
           font-size: 14px;
      }
 }
-/* Адаптивность для планшетов */
+
 @media (max-width: 845px) {
      .popular__container>p {
           font-size: 30px;
@@ -136,7 +136,6 @@
      }
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 480px) {
      .popular__container>span {
           font-size: 15px;
@@ -168,7 +167,6 @@
           font-size: 16px;
      }
 
-     /* Исправление ширины картинки для мобильных устройств */
      .popular__card img {
           width: 100%;
           height: auto;

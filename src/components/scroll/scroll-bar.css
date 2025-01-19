@@ -9,16 +9,13 @@
      height: 100%;
      overflow-y: auto;
      padding-right: 10px;
-     /* Отступ для кастомного скроллбара */
      scrollbar-width: none;
-     /* Firefox */
      -ms-overflow-style: none;
-     /* IE и старые Edge */
 }
 
 .scroll-content::-webkit-scrollbar {
      display: none;
-     /* WebKit */
+  
 }
 
 .scroll-bar {
@@ -37,7 +34,7 @@
      right: 0;
      width: 10px;
      height: 50px;
-     /* Начальная высота бегунка */
+ 
      background: linear-gradient(135deg, #cd1a40, #ff803c);
      border-radius: 10px;
      transition: background 0.3s ease, height 0.2s ease;

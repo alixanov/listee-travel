@@ -117,7 +117,7 @@
      font-size: 16px;
 }
 
-/* Адаптация для экранов от 1200px */
+
 @media screen and (max-width: 1200px) {
      .testimonials__container>p {
           font-size: 35px;
@@ -159,7 +159,7 @@
      }
 }
 
-/* Для планшетов */
+
 @media (max-width: 768px) {
      .testimonials__container>span {
           font-size: 30px;
@@ -208,7 +208,6 @@
      }
 }
 
-/* Для мобильных устройств */
 @media (max-width: 480px) {
      .testimonials__container>span {
           font-size: 15px;

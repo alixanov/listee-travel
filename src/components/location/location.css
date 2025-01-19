@@ -128,7 +128,7 @@
      transform: scale(0.95);
 }
 
-/* Media Queries for Responsive Design */
+
 
 @media screen and (max-width: 1200px) {
      .location__cards {
@@ -190,7 +190,7 @@
           height: 40px;
           font-size: 12px;
      }
-}/* Media Queries for Responsive Design */
+}
 
 @media screen and (max-width: 1200px) {
      .location__cards {
@@ -206,15 +206,13 @@
           font-size: 45px;
      }
 
-     /* Button resizing for tablets */
+   
      .location__overlay>button,
      .location__viewMore {
           width: 130px;
-          /* Decreased width */
           height: 40px;
-          /* Decreased height */
           font-size: 14px;
-          /* Slightly reduced font size */
+      
      }
 }
 
@@ -236,15 +234,14 @@
           font-size: 24px;
      }
 
-     /* Button resizing for small tablets and phones */
      .location__overlay>button,
      .location__viewMore {
           width: 120px;
-          /* Further reduced width */
+     
           height: 35px;
-          /* Further reduced height */
+          
           font-size: 13px;
-          /* Reduced font size */
+       
      }
 }
 
@@ -261,18 +258,18 @@
           font-size: 20px;
      }
 
-     /* Button resizing for phones */
+   
      .location__overlay>button,
      .location__viewMore {
           width: 110px;
-          /* Smaller width for phones */
+
           height: 32px;
-          /* Smaller height for phones */
+    
           font-size: 12px;
-          /* Reduced font size for better fit */
+
      }
 }
-/* Media Queries for Responsive Design */
+
 
 @media screen and (max-width: 1200px) {
      .location__cards {
@@ -288,7 +285,7 @@
           font-size: 45px;
      }
 
-     /* Button resizing for tablets */
+
      .location__overlay > button,
      .location__viewMore {
           width: 130px;
@@ -296,7 +293,7 @@
           font-size: 14px;
      }
 
-     /* Make images a bit smaller for tablets */
+    
      .location__card img {
           object-fit: cover;
           height: auto;
@@ -321,7 +318,6 @@
           font-size: 24px;
      }
 
-     /* Button resizing for small tablets and phones */
      .location__overlay > button,
      .location__viewMore {
           width: 120px;
@@ -329,10 +325,9 @@
           font-size: 13px;
      }
 
-     /* Ensure images scale appropriately for smaller devices */
      .location__card img {
           object-fit: cover;
-          height: 200px; /* Set a fixed height for better mobile look */
+          height: 200px; 
           width: 100%;
      }
 }
@@ -350,7 +345,6 @@
           font-size: 20px;
      }
 
-     /* Button resizing for phones */
      .location__overlay > button,
      .location__viewMore {
           width: 110px;
@@ -358,10 +352,10 @@
           font-size: 12px;
      }
 
-     /* Adjust image size for phones */
+
      .location__card img {
           object-fit: cover;
-          height: 180px; /* Slightly smaller image height for phones */
+          height: 180px; 
           width: 100%;
      }
 }
