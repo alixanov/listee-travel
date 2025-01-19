@@ -165,6 +165,10 @@
      .navbar__container {
           height: 65px;
      }
+
+          .navbar__sign__in {
+               display: none;
+          }
      .navbar__a__links {
           display: none;
           flex-direction: column;

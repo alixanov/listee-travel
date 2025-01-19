@@ -229,8 +229,13 @@
      }
 
      .testimonials__card {
-          width: 100%;
-          padding: 20px;
+       
+               width: 100%;
+               padding: 40px;
+               border-radius: 10px;
+         
+               margin-bottom: 20px;
+               font-size: 14px;
      }
 
      .quote__icon {

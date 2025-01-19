@@ -46,6 +46,34 @@ body {
   padding-inline: 170px;
 }
 
+/* Уменьшение отступов для экранов шириной менее 1200px */
+@media (max-width: 1200px) {
+  .app__container {
+    padding-inline: 120px;
+  }
+}
+
+/* Ещё меньше отступы для экранов шириной менее 992px */
+@media (max-width: 992px) {
+  .app__container {
+    padding-inline: 80px;
+  }
+}
+
+/* Минимальные отступы для экранов шириной менее 768px */
+@media (max-width: 768px) {
+  .app__container {
+    padding-inline: 40px;
+  }
+}
+
+/* На очень узких экранах (мобильные устройства) */
+@media (max-width: 576px) {
+  .app__container {
+    padding-inline: 20px;
+  }
+}
+
 /* Скрываем стандартный скроллбар */
 .scroll-container {
   position: relative;
