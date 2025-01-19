@@ -24,19 +24,23 @@
 }
 
 .shared__container>h4 {
-     width: 900px;
+width: 900px;
      font-family: 'WorkSans-Light', sans-serif;
      color: #222222;
      font-size: 16px;
      font-weight: 300;
      margin: -15px 0 50px;
+     text-transform: uppercase;
 }
+
 .shared__card {
      display: flex;
      align-items: center;
      justify-content: center;
-     flex-wrap:wrap;
-gap: 60px;}
+     flex-wrap: wrap;
+     gap: 30px;
+}
+
 .shared__card>img {
      width: 380px;
      height: 486px;
@@ -45,4 +49,107 @@ gap: 60px;}
 
 .shared__card>img:hover {
      opacity: 0.8;
+}
+@media screen and (max-width: 1200px) {
+
+
+     .shared__container>p {
+          font-size: 35px;
+          margin-top: 10px;
+     }
+
+     .shared__container>span {
+          font-size: 35px;
+     }
+
+     .shared__container>h4 {
+          width: 500px;
+          font-size: 14px;
+     }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+     .activity__grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+     }
+
+      .shared__container>p {
+          font-size: 35px;
+          margin-top: 10px;
+     }
+
+     .activity__container>span {
+          font-size: 35px;
+     }
+
+      .shared__container>h4 {
+          width: 500px;
+          font-size: 14px;
+     }
+}
+
+
+/* Адаптивность для планшетов */
+@media (max-width: 768px) {
+     .shared__container>span {
+               font-size: 35px;     }
+
+     .shared__container>p {
+font-size: 30px;
+     margin-top: 10px;     }
+
+     .shared__container>h4 {
+width: 100%;
+     font-size: 14px;
+     margin: -8px 0 30px;
+     }
+
+     .shared__card>img {
+          width: 100%;
+          height: auto;
+     }
+}
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+     .shared__container>span {
+          font-size: 15px;
+          font-weight: 300;
+     }
+
+     .shared__container>p {
+          font-size: 20px;
+          margin-top: 1px;
+     }
+
+     .shared__container>h4 {
+          width: 200px;
+          font-size: 7px;
+          margin: 0 0 0 0;
+          margin-top: -40px;
+          margin-bottom: 10px;
+     }
+
+     .shared__card {
+          flex-direction: column;
+          /* Stack images vertically */
+          align-items: center;
+          /* Center images */
+          gap: 20px;
+          /* Smaller gap between images */
+     }
+
+     .shared__card>img {
+          width: 100%;
+          /* Allow the images to take full container width */
+          max-width: 350px;
+          /* Ensure it doesn't get too large */
+          height: auto;
+          object-fit: contain;
+          /* Maintain aspect ratio */
+          margin: 0;
+          /* Remove extra margin */
+     }
 }

@@ -13,6 +13,11 @@
   font-family: 'WorkSans-Light';
   src: url('../src/fonts/WorkSans-Light.ttf');
 }
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../src/fonts/ClashDisplay-Regular.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;

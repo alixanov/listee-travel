@@ -24,21 +24,35 @@
 }
 
 .testimonials__container>h4 {
-     width: 800px;
+     width: 900px;
      font-family: 'WorkSans-Light', sans-serif;
      color: #222222;
      font-size: 16px;
      font-weight: 300;
      margin: -15px 0 50px;
+     text-transform: uppercase;
 }
 
 .testimonials__card {
-     background: linear-gradient(#ee1c45, #ff803c);     color: white;
+     background: linear-gradient(#ee1c45, #ff803c);
+     color: white;
      width: 1000px;
      padding: 40px;
      border-radius: 10px;
      position: relative;
      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+     margin-bottom: 50px;
+}
+
+.testimonials__card::after {
+     content: '';
+     position: absolute;
+     bottom: -20px;
+     right: 300px;
+     width: 30px;
+     height: 20px;
+     background: linear-gradient(#ee1c45, #ff803c);
+     clip-path: polygon(100% 0, 0% 100%, 0 0);
 }
 
 .testimonials__quote {
@@ -49,10 +63,12 @@
 
 .quote__icon {
      position: absolute;
-     font-size: 60px;
-     left: 0;
-     top: -10px;
-     color: white;
+     font-size: 170px;
+     left: -16px;
+     top: -100px;
+     color: black;
+     font-family: 'ClashDisplay-Regular';
+     font-weight: bold;
 }
 
 .testimonials__quote p {
@@ -60,7 +76,6 @@
      font-size: 18px;
      line-height: 1.6;
 }
-
 
 .testimonials__avatars {
      display: flex;
@@ -81,20 +96,171 @@
      transform: scale(1.1);
      border-color: #ff6347;
 }
+
 .testimonials__avatar__comment {
      display: flex;
      align-items: start;
      flex-direction: column;
      justify-content: center;
 }
-.testimonials__avatar__comment > p {
-          font-family: 'WorkSans-Regular', sans-serif;
+
+.testimonials__avatar__comment>p {
+     font-family: 'WorkSans-Regular', sans-serif;
      color: #222222;
      font-size: 20px;
      font-weight: 600;
 }
+
 .testimonials__avatar__comment>span {
      font-family: 'WorkSans-Regular', sans-serif;
      color: #222222;
      font-size: 16px;
+}
+
+/* Адаптация для экранов от 1200px */
+@media screen and (max-width: 1200px) {
+     .testimonials__container>p {
+          font-size: 35px;
+          margin-top: 10px;
+     }
+
+     .testimonials__container>span {
+          font-size: 35px;
+     }
+
+     .testimonials__container>h4 {
+          width: 500px;
+          font-size: 14px;
+     }
+
+     .testimonials__card {
+          width: 90%;
+          padding: 30px;
+     }
+
+     .quote__icon {
+          font-size: 120px;
+          margin-top: 30px;
+     }
+
+     .testimonials__quote p {
+          font-size: 16px;
+     }
+
+     .testimonials__avatars {
+          width: 300px;
+          gap: 15px;
+          flex-wrap: wrap;
+     }
+
+     .testimonials__avatars img {
+          width: 50px;
+          height: 50px;
+     }
+}
+
+/* Для планшетов */
+@media (max-width: 768px) {
+     .testimonials__container>span {
+          font-size: 30px;
+          margin-top: 10px;
+     }
+
+     .testimonials__container>p {
+          font-size: 35px;
+     }
+
+     .testimonials__container>h4 {
+          width: 100%;
+          font-size: 14px;
+          margin: -8px 0 30px;
+     }
+
+     .testimonials__card {
+          width: 100%;
+          padding: 10px;
+     }
+
+     .quote__icon {
+          font-size: 120px;
+          margin-top: 30px;
+     }
+
+     .testimonials__quote p {
+          font-size: 16px;
+          margin-left: -30px;
+     }
+
+     .testimonials__avatars {
+          gap: 15px;
+     }
+
+     .testimonials__avatars img {
+          width: 60px;
+          height: 60px;
+     }
+
+     .testimonials__card {
+          width: 400px;
+          padding: 30px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+     }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 480px) {
+     .testimonials__container>span {
+          font-size: 15px;
+          font-weight: 300;
+     }
+
+     .testimonials__container>p {
+          font-size: 20px;
+          margin-top: 1px;
+     }
+
+     .testimonials__container>h4 {
+          width: 200px;
+          font-size: 7px;
+          margin: 0 0 0 0;
+          margin-top: -40px;
+          margin-bottom: 10px;
+     }
+
+     .testimonials__card {
+          width: 100%;
+          padding: 20px;
+     }
+
+     .quote__icon {
+          font-size: 100px;
+     }
+
+     .testimonials__quote p {
+          font-size: 14px;
+     }
+
+     .testimonials__avatars {
+          gap: 10px;
+     }
+
+     .testimonials__avatars img {
+          width: 50px;
+          height: 50px;
+     }
+
+     .testimonials__card {
+          width: 200px;
+          padding: 10px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+          font-size: 14px;
+     }
+
+     .quote__icon {
+          font-size: 70px;
+          margin-top: 65px;
+          margin-left: 15px;
+     }
 }

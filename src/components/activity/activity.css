@@ -36,7 +36,7 @@
 .activity__grid {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
-     gap: 60px;
+     gap: 30px;
 }
 
 .activity__card {
@@ -53,8 +53,8 @@
 .activity__card:hover {
      background: linear-gradient(135deg, #ee1c45, #ff803c);
      color: white;
+     transition: .5s ease-in;
 }
-
 
 .activity__card img {
      max-width: 100px;
@@ -79,4 +79,124 @@
 .activity__card:hover {
      transform: translateY(-10px);
      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 1200px) {
+     .activity__grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+     }
+
+     .activity__container>p {
+          font-size: 35px;
+          margin-top: 10px;
+     }
+
+     .activity__container>span {
+          font-size: 35px;
+     }
+
+     .activity__container>h4 {
+          width: 500px;
+          font-size: 14px;
+     }
+
+     .activity__card {
+          width: 320px;
+          height: 380px;
+          padding: 60px 20px;
+     }
+
+     .activity__card p {
+          font-size: 26px;
+     }
+}
+
+@media screen and (max-width: 768px) {
+     .activity__grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+     }
+
+     .activity__container>p {
+          font-size: 30px;
+          margin-top: 10px;
+     }
+
+     .activity__container>span {
+          font-size: 35px;
+     }
+
+     .activity__container>h4 {
+          width: 100%;
+          font-size: 14px;
+          margin: -8px 0 30px;
+     }
+
+     .activity__card {
+          width: 280px;
+          height: 360px;
+          padding: 20px 15px;
+     }
+
+     .activity__card p {
+          font-size: 24px;
+     }
+
+     .activity__card span {
+          font-size: 20px;
+     }
+}
+
+/* Mobile view: Single column or flex wrap layout for cards */
+@media screen and (max-width: 480px) {
+     .activity__container>span {
+          font-size: 15px;
+          font-weight: 300;
+     }
+
+     .activity__container>p {
+          font-size: 20px;
+          margin-top: 1px;
+     }
+
+     .activity__container>h4 {
+          width: 200px;
+          font-size: 7px;
+          margin: 0 0 0 0;
+          margin-top: -40px;
+          margin-bottom: 10px;
+     }
+
+     .activity__grid {
+          display: flex;
+          flex-direction: column;
+          /* Stack items vertically */
+          gap: 20px;
+          /* Reduce gap between items */
+          align-items: center;
+          /* Center content */
+     }
+
+     .activity__card {
+          width: 250px;
+          height: 270px;
+          padding: 10px 10px;
+     }
+
+     .activity__card p {
+          font-size: 17px;
+     }
+
+     .activity__card img {
+          max-width: 50px;
+     }
+
+     .activity__card span {
+          font-size: 17px;
+     }
 }

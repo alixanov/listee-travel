@@ -11,7 +11,7 @@ const Location = () => {
       <span>Choose your</span>
       <p>DESTINATION</p>
       <div className="location__cards">
-        <div className="location__card large">
+        <div className="location__card large active">
           <img src={malaysia} alt="Malaysia" className='malaysia' />
           <div className="location__overlay">
             <h3>Malaysia</h3>
@@ -19,7 +19,7 @@ const Location = () => {
           </div>
         </div>
         <div className="location__card">
-          <img src={dubai} alt="Dubai"   />
+          <img src={dubai} alt="Dubai" />
           <div className="location__overlay">
             <h3>Dubai</h3>
             <button>16 TOURS</button>

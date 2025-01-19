@@ -11,7 +11,8 @@
      background-position: center;
      position: relative;
      z-index: 1;
-     padding-inline: 170px;}
+     padding-inline: 170px;
+}
 
 .footer__container::before {
      content: '';
@@ -34,7 +35,6 @@
      margin-bottom: 15px;
 }
 
-
 .footer__links {
      display: flex;
      justify-content: space-between;
@@ -54,8 +54,9 @@
      font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
      width: 600px;
      margin-bottom: 15px;
-     color: #cccccc;               font-size: 20px;
-               font-weight: 400;
+     color: #cccccc;
+     font-size: 20px;
+     font-weight: 400;
 }
 
 .footer__section h4 {
@@ -74,7 +75,7 @@
      font-size: 22px;
      line-height: 2;
      cursor: pointer;
-          color: #cccccc;
+     color: #cccccc;
 }
 
 .footer__section ul li:hover {
@@ -106,3 +107,105 @@
      transform: scale(1.1);
 }
 
+/* Медиазапросы для адаптивности */
+
+/* Для планшетов */
+@media (max-width: 768px) {
+     .footer__container {
+          padding-inline: 40px;
+     }
+     .footer__links{
+
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+
+              .footer__section {
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   flex-direction: column;
+              }
+                    .footer__section ul {
+          display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         flex-direction: column;
+                    }
+
+     .footer__content h3 {
+          font-size: 35px;
+     }
+
+     .footer__section h3 {
+          font-size: 50px;
+     }
+
+     .footer__section h6 {
+          font-size: 18px;
+          text-align: center;
+     }
+
+     .footer__section h4 {
+          font-size: 22px;
+     }
+
+     .footer__section ul li {
+          font-size: 18px;
+     }
+
+     .footer__section p {
+          font-size: 18px;
+     }
+          .footer__section h6 {
+               width: 300px;
+           
+          }
+          .footer__section > p{
+               width: 300px;
+               text-align: center;
+          }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 480px) {
+     .footer__container {
+          background-image: url(../../assets/tree.avif);
+          padding-inline: 20px;
+     }
+
+     .footer__content h3 {
+          font-size: 28px;
+     }
+
+     .footer__section h3 {
+          font-size: 40px;
+     }
+
+     .footer__section h6 {
+          font-size: 16px;
+          text-align: center;
+     }
+
+     .footer__section h4 {
+          font-size: 20px;
+     }
+
+     .footer__section ul li {
+          font-size: 16px;
+     }
+
+     .footer__section p {
+          font-size: 16px;
+     }
+
+     .footer__social {
+          gap: 10px;
+     }
+
+     .footer__social img {
+          width: 25px;
+          height: 25px;
+     }
+}

@@ -1,4 +1,3 @@
-
 .header__container {
      width: 100%;
      display: flex;
@@ -7,55 +6,66 @@
 }
 
 .header__left {
-     width: 580px;
+     width: 640px;
+     /* Уменьшено для адаптации */
      display: flex;
      align-items: start;
      flex-direction: column;
-     gap: 20px;
+     gap: 15px;
+     /* Уменьшен разрыв */
 }
 
 .header__left>h3 {
      font-family: 'Water Brush', Arial, Helvetica, sans-serif;
-     font-size: 80px;
+     font-size: 85px;
+     /* Уменьшено */
      color: white;
-     margin-top: 80px;
+     margin-top: 50px;
      font-weight: 500;
 }
 
 .header__left>h1 {
      font-family: Arial, Helvetica, sans-serif;
      font-weight: bold;
-     font-size: 90px;
+     font-size: 80px;
+     /* Уменьшено */
      color: white;
-     margin-top: 30px;
+     margin-top: 20px;
 }
 
 .header__left>p {
      font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
-     font-size: 19px;
+     font-size: 20px;
+     /* Уменьшено */
      color: white;
 }
 
 .header__left__card {
      width: 100%;
-     height: 130px;
+     height: 150px;
+     /* Уменьшено */
      display: flex;
      align-items: center;
-     justify-content: space-between;
+     justify-content: space-around;
      background-color: rgba(255, 255, 255, 0.176);
-     margin-top: 100px;
-     border-radius: 28px;
-     padding: 20px;
+     margin-top: 60px;
+     /* Уменьшен разрыв */
+     border-radius: 20px;
+     /* Сглажено */
+     padding: 1px 30px;
+     /* Уменьшено */
 }
 
 .header__location {
      display: flex;
      align-items: center;
      justify-content: center;
-     gap: 20px;
-     padding-right: 15px;
-     /* Сдвиг границы на 10px */
-     border-right: solid 2px white;
+     gap: 15px;
+     /* Уменьшен разрыв */
+     padding-right: 50px;
+     /* Уменьшено */
+     border-right: solid 1.5px white;
+     /* Сужено */
 }
 
 .header__location__txt {
@@ -65,49 +75,228 @@
 }
 
 .header__location>img {
-     width: 24px;
+     width: 20px;
+     /* Уменьшено */
 }
 
 .header__location__txt>span {
      font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
      color: white;
-     font-size: 26px;
+     font-size: 22px;
+     /* Уменьшено */
      font-weight: 400;
 }
 
 .header__location__txt>p {
      font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
      color: white;
-     font-size: 29px;
+     font-size: 24px;
+     /* Уменьшено */
      font-weight: 600;
 }
 
 .header__right {
-     width: 580px;
+     width: 540px;
+     /* Уменьшено */
 }
 
 .header__left__card>button {
-     font-family: 'WorkSans-Light', Arial, Helvetica, sans-serif;
-     width: 65px;
-     height: 65px;
+     width: 55px;
+     /* Уменьшено */
+     height: 55px;
+     /* Уменьшено */
      background: linear-gradient(#ee1c45, #ff803c);
      color: white;
      font-weight: 700;
-     border-radius: 22px;
+     border-radius: 18px;
+     /* Уменьшено */
      border: none;
      cursor: pointer;
      transition: background 0.3s, transform 0.2s;
-     font-size: 16px;
-}
-
-.header__left__card>button:hover {
-     background: linear-gradient(#ff803c, #ee1c45);
-}
-
-.header__left__card>button:active {
-     transform: scale(0.95);
+     font-size: 14px;
+     /* Уменьшено */
 }
 
 .header__left__card>button>img {
-     width: 24px;
+     width: 20px;
+     /* Уменьшено */
+}
+
+/* --- Адаптация для планшетов (до 992px) --- */
+@media (max-width: 992px) {
+
+     .header__right {
+               width: 300px;
+               /* Уменьшено */
+          }
+     .header__left__card {
+          flex-direction: column;
+          /* Элементы в колонку */
+          height: auto;
+          /* Высота адаптивная */
+          padding: 15px;
+          /* Уменьшить внутренние отступы */
+          gap: 15px;
+          /* Разделить элементы */
+          margin-top: 10px;
+          margin-bottom: 10px;
+     }
+
+     .header__location {
+          padding-right: 0;
+          /* Убрать разделение */
+          border-right: none;
+          /* Убрать границу */
+          gap: 10px;
+          /* Уменьшить отступы между элементами */
+     }
+
+     .header__location__txt>span {
+          font-size: 20px;
+          /* Уменьшить размер текста */
+     }
+
+     .header__location__txt>p {
+          font-size: 22px;
+          /* Уменьшить размер текста */
+     }
+
+     .header__left__card>button {
+          width: 50px;
+          /* Уменьшить кнопку */
+          height: 50px;
+          /* Уменьшить кнопку */
+     }
+
+     .header__left__card>button>img {
+          width: 18px;
+          /* Уменьшить иконку */
+     }
+}
+
+/* --- Адаптация для телефонов (до 576px) --- */
+@media (max-width: 576px) {
+     .header__left__card {
+                    width: 200px;
+          padding: 5px;
+          /* Минимальные отступы */
+          gap: 10px;
+          /* Уменьшить отступы между элементами */
+          align-items: start;
+     }
+
+     .header__location {
+          gap: 8px;
+          /* Уменьшить расстояние между иконкой и текстом */
+     }
+
+     .header__location__txt>span {
+          font-size: 15px;
+          /* Ещё меньше текст */
+     }
+
+     .header__location__txt>p {
+          font-size: 16px;
+          /* Ещё меньше текст */
+     }
+
+     .header__left__card>button {
+          width: 40px;
+          /* Ещё меньше кнопка */
+          height: 40px;
+          /* Ещё меньше кнопка */
+     }
+
+     .header__left__card>button>img {
+          width: 16px;
+          /* Ещё меньше иконка */
+     }
+}
+
+/* --- Адаптация для планшетов (до 992px) --- */
+@media (max-width: 992px) {
+     .header__left {
+          width: 480px;
+          /* Уменьшено для планшетов */
+          gap: 10px;
+          /* Уменьшены разрывы */
+     }
+
+     .header__left>h3 {
+          font-size: 50px;
+          /* Уменьшено для планшетов */
+          margin-top: 20px;
+          /* Уменьшен верхний отступ */
+     }
+
+     .header__left>h1 {
+          font-size: 40px;
+          /* Уменьшено для планшетов */
+          margin-top: 5px;
+          /* Уменьшен верхний отступ */
+     }
+
+     .header__left>p {
+          font-size: 15px;
+          /* Уменьшен текст описания */
+     }
+}
+
+/* --- Адаптация для телефонов (до 576px) --- */
+@media (max-width: 576px) {
+     .header__left {
+          width: 100%;
+          /* На телефонах ширина на весь экран */
+          gap: 8px;
+          /* Минимальные разрывы */
+     }
+
+     .header__left>h3 {
+          font-size: 38px;
+          /* Ещё меньше текст */
+          margin-top: 5px;
+          /* Уменьшен верхний отступ */
+     }
+
+     .header__left>h1 {
+          font-size: 40px;
+          /* Ещё меньше заголовок */
+          margin-top: 10px;
+          /* Ещё меньше отступ */
+     }
+
+     .header__left>p {
+          font-size: 14px;
+          /* Ещё меньше текст описания */
+     }
+}
+
+/* --- Адаптация для телефонов (до 576px) --- */
+@media (max-width: 450px) {
+     .header__left {
+          width: 100%;
+          /* На телефонах ширина на весь экран */
+          gap: 8px;
+          /* Минимальные разрывы */
+     }
+
+     .header__left>h3 {
+          font-size: 30px;
+          /* Ещё меньше текст */
+          margin-top: 5px;
+          /* Уменьшен верхний отступ */
+     }
+
+     .header__left>h1 {
+          font-size: 30px;
+          /* Ещё меньше заголовок */
+          margin-top: 10px;
+          /* Ещё меньше отступ */
+     }
+
+     .header__left>p {
+          font-size: 14px;
+          letter-spacing: 0;
+          /* Ещё меньше текст описания */
+     }
 }

@@ -21,7 +21,7 @@ const Popular = () => {
                                    <p className="card__title">Rome, Italy</p>
                                    <span>10 days trip</span>
                               </div>
-                         
+
                               <p className="card__price">$5.24K</p>
                          </div>
                     </div>
@@ -41,8 +41,8 @@ const Popular = () => {
                               <div className="popular__card__title">
                                    <p className="card__title">Singapore</p>
                                    <span>6 days trip</span>
-                           </div>
-                                   <p className="card__price">$7.00K</p>
+                              </div>
+                              <p className="card__price">$7.00K</p>
                          </div>
                     </div>
                </div>
