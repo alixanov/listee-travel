@@ -288,7 +288,7 @@
      }
 
      /* Button resizing for tablets */
-     .location__overlay>button,
+     .location__overlay > button,
      .location__viewMore {
           width: 130px;
           height: 40px;
@@ -308,11 +308,11 @@
           width: 100%;
      }
 
-     .location__container>p {
+     .location__container > p {
           font-size: 40px;
      }
 
-     .location__container>span {
+     .location__container > span {
           font-size: 35px;
      }
 
@@ -321,7 +321,7 @@
      }
 
      /* Button resizing for small tablets and phones */
-     .location__overlay>button,
+     .location__overlay > button,
      .location__viewMore {
           width: 120px;
           height: 35px;
@@ -331,18 +331,17 @@
      /* Ensure images scale appropriately for smaller devices */
      .location__card img {
           object-fit: cover;
-          height: 200px;
-          /* Set a fixed height for better mobile look */
+          height: 200px; /* Set a fixed height for better mobile look */
           width: 100%;
      }
 }
 
 @media screen and (max-width: 480px) {
-     .location__container>p {
+     .location__container > p {
           font-size: 30px;
      }
 
-     .location__container>span {
+     .location__container > span {
           font-size: 28px;
      }
 
@@ -351,7 +350,7 @@
      }
 
      /* Button resizing for phones */
-     .location__overlay>button,
+     .location__overlay > button,
      .location__viewMore {
           width: 110px;
           height: 32px;
@@ -361,8 +360,7 @@
      /* Adjust image size for phones */
      .location__card img {
           object-fit: cover;
-          height: 180px;
-          /* Slightly smaller image height for phones */
+          height: 180px; /* Slightly smaller image height for phones */
           width: 100%;
      }
 }

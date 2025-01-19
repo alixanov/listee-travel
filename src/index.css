@@ -13,6 +13,7 @@
   font-family: 'WorkSans-Light';
   src: url('../src/fonts/WorkSans-Light.ttf');
 }
+
 @font-face {
   font-family: 'ClashDisplay-Regular';
   src: url('../src/fonts/ClashDisplay-Regular.ttf');
@@ -42,4 +43,63 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-    padding-inline: 170px;  }
+  padding-inline: 170px;
+}
+
+/* Скрываем стандартный скроллбар */
+.scroll-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  /* Высота видимой области */
+}
+
+.scroll-content {
+  height: 100%;
+  overflow-y: scroll;
+  /* Активируем вертикальный скролл */
+  padding-right: 10px;
+  /* Отступ для кастомного скроллбара */
+  scrollbar-width: none;
+  /* Скрыть в Firefox */
+  -ms-overflow-style: none;
+  /* Скрыть в IE и старых Edge */
+}
+
+.scroll-content::-webkit-scrollbar {
+  display: none;
+  /* Скрыть в Chrome/Edge/Safari */
+}
+
+.scroll-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: #1f1f1f;
+  border-radius: 10px;
+}
+
+.scroll-thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 50px;
+  /* Начальная высота бегунка */
+  background: linear-gradient(135deg, #cd1a40, #ff803c);
+  border-radius: 10px;
+  transition: background 0.3s ease, height 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.scroll-thumb:hover {
+  background: linear-gradient(135deg, #a51432, #ff6500);
+}
+
+/* Добавление плавного перехода */
+.scroll-thumb {
+  transition: top 0.1s ease-in-out;
+}
