@@ -128,7 +128,7 @@
      }
 
      .activity__container>span {
-          font-size: 35px;
+          font-size: 30px;
      }
 
      .activity__container>h4 {
@@ -155,7 +155,7 @@
 /* Mobile view: Single column or flex wrap layout for cards */
 @media screen and (max-width: 480px) {
      .activity__container>span {
-          font-size: 15px;
+          font-size: 10px;
           font-weight: 300;
      }
 
